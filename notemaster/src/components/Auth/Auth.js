@@ -25,7 +25,7 @@ class Auth extends Component {
             this.state.password === this.state.uPass
         ) {
             this.setState({
-                attempted: true
+                authenticated: true
             });
         }
         this.setState({
@@ -47,7 +47,7 @@ class Auth extends Component {
         }
         return (
             <div>
-                <h1>Auth Component</h1>
+                <h1>Log In, Or Create An Account</h1>
                 <form onSubmit={this.checkAuthorization}>
                     <div>
                         <input
